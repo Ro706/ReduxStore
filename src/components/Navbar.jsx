@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Navbar
+          Back Of Future
         </Link>
         <button
           className="navbar-toggler"
@@ -27,45 +27,14 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/link">
-                Link
+              <Link className="nav-link" to="/about">
+                About
               </Link>
-            </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/action">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/another-action">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/something-else">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
             </li>
             <li className="nav-item">
-              <span className="nav-link disabled" aria-disabled="true">
-                Disabled
-              </span>
+              <Link className="nav-link" to="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
           <form className="d-flex" role="search">
