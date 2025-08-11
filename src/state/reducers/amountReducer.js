@@ -1,11 +1,12 @@
-export default reducer =(state=0,action)=>{
-    if(action.type == 'desposite'){
-        return state + action.payload
-    }
-    else if(action.type == 'withdraw'){
-        return state - action.payload
-    }
-    else{
-        return state;
-    }
-}
+const reducer = (state = 0, action) => {
+  switch (action.type) {
+    case 'deposit':
+      return state + action.payload;
+    case 'withdraw':
+      return state - action.payload;
+    default:
+      return state;
+  }
+};
+
+export default reducer;
