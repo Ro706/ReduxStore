@@ -1,12 +1,20 @@
-# React + Vite
+# ReduxStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About Redux
 
-Currently, two official plugins are available:
+[Redux](https://redux.js.org/) is a predictable state container for JavaScript applications. It helps you manage the state of your app in a single, centralized store, making state changes predictable and easier to debug. Redux is commonly used with libraries like React, but it can be used with any JavaScript framework or library.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key features of Redux:
+- **Single Source of Truth:** The state of your whole application is stored in an object tree within a single store.
+- **State is Read-Only:** The only way to change the state is to emit an action, an object describing what happened.
+- **Changes are Made with Pure Functions:** To specify how the state tree is transformed by actions, you write pure reducers.
 
-## Expanding the ESLint configuration
+## What I Made
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project demonstrates a simple Redux store implementation. It includes:
+- Setting up a Redux store
+- Creating actions and reducers
+- Dispatching actions to update the state
+- Connecting the store to a UI 
+
+Feel free to explore the code and see how Redux manages state in a scalable and predictable way!
