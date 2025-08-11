@@ -1,6 +1,6 @@
 const reducer = (state = 0, action) => {
   switch (action.type) {
-    case 'deposit':
+    case 'deposite':
       return state + action.payload;
     case 'withdraw':
       return state - action.payload;

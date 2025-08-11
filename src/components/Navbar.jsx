@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const amount = useSelector((state) => state.amount);
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -38,7 +40,7 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="">
-            <button className="btn btn-outline-primary" disabled={true}>Your balance: Rs.0</button>
+            <button className="btn btn-outline-primary" disabled={true}>Your balance: Rs.{amount}</button>
           </div>
         </div>
       </div>
